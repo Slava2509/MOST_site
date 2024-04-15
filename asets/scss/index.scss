@@ -1,0 +1,80 @@
+@import 'fonts.scss';
+@import 'vars.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: $mainFontFamily;
+    color: $colorTextStyle;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.page {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1243px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: black;
+    background-image: url('/img/header.svg');
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 247px;
+
+    &__logo {
+        width: 65px;
+        height: 55px;
+
+    }
+
+    &__nav {
+        width: 31px;
+        height: 14px;
+        padding-top: 17px;
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    &__nameLogo {
+        display: block;
+    }
+
+    &__advertisement-txt {
+        line-height: 26px;
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 300px;
+    }
+}
