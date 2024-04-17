@@ -15,11 +15,14 @@ img {
 body {
     font-family: $mainFontFamily;
     color: $colorTextStyle;
+    // overflow-x: hidden;
+
 
 }
 
 a {
     text-decoration: none !important;
+    color: $colorTextStyle;
 }
 
 li {
@@ -45,32 +48,33 @@ p {
 .header {
     position: absolute;
     width: 100%;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 85px;
-
-    &__logo {
-        width: 65px;
 
 
-        @media screen and (max-width: 786px) {
-            width: 60px;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 85px;
 
+        &__logo {
+            width: 65px;
+
+
+            @media screen and (max-width: 786px) {
+                width: 60px;
+
+            }
+
+            @media screen and (max-width: 576px) {
+                width: 52px;
+
+            }
         }
 
-        @media screen and (max-width: 576px) {
-            width: 52px;
-
+        &__nav {
+            width: 31px;
+            height: 14px;
+            padding-top: 17px;
         }
-    }
-
-    &__nav {
-        width: 31px;
-        height: 14px;
-        padding-top: 17px;
     }
 }
 
@@ -104,35 +108,39 @@ p {
     }
 
     &__text {
-        padding-bottom: 30px;
-
-
+        padding-bottom: 67px;
+        padding-right: 20px;
     }
 
     &__text-txt {
         line-height: 26px;
-        font-weight: 400;
         font-size: 16px;
         max-width: 300px;
-
+        font-weight: 400;
     }
 }
 
-.content {
+.nav {
     background: #222A35;
 
-    .contentLink {
+    &__content {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        flex-direction: row;
+
 
     }
 
-    .links {
+    &__link {
         width: calc(100%/3);
-        height: 0px;
-        padding-bottom: 25%;
-        border: 0.5px solid #333B45;
+        display: flex;
+        padding-bottom: 15%;
+        border: 1px solid #333B45;
+        justify-content: space-between;
+        padding-left: 58px;
+        padding-top: 58px;
+        padding-right: 137px;
+        gap: 137px;
 
         @media screen and (max-width: 986px) {
             width: calc(100%/2);
@@ -140,88 +148,148 @@ p {
 
         @media screen and (max-width: 586px) {
             width: 100%;
-        }
-
-        &__link {
-            display: flex;
-            justify-content: space-between;
-            padding-right: 30px;
-            padding-top: 10px;
-            padding-left: 25px;
+            padding-right: 77px;
+            padding-left: 38px;
+            padding-top: 38px;
         }
     }
 
+    &__imgBox:hover {
+        background-image: url('/img/picCase.png');
+    }
+
+    &__imgSys:hover {
+        background-image: url('/img/sys.png');
+    }
+
+    &__imgCond:hover {
+        background-image: url('/img/cond.png');
+    }
+
+    &__imgOcp:hover {
+        background-image: url('/img/ocp.png');
+    }
+
+    &__imgBlock:hover {
+        background-image: url('/img/block.png');
+    }
+
+    &__imgAcs:hover {
+        background-image: url('/img/acs.png');
+    }
+
+    &__item {
+        width: 15%;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    &__svg {
+        // margin-left: 100px;
+        width: 28px;
+        height: 28px;
+    }
 }
 
-.info {
-    background-color: black;
-    padding-bottom: 40px;
+.main {
+    background-color: #202020;
 
-    .inner {
+    &__inner {
         display: flex;
         flex-direction: column;
-        padding-top: 120px;
+        padding-left: 59px;
+        padding-right: 59px;
     }
 
-    .title {
-        font-family: Neue Machina;
+    &__title {
+        padding-top: 134px;
+        max-width: 20rem;
+        padding-bottom: 123px;
+
+        @media screen and (max-width: 786px) {
+            padding-top: 96px;
+            padding-bottom: 36px;
+        }
+    }
+
+    &__title_text {
+        text-transform: uppercase;
         font-size: 53px;
         font-weight: 800;
-        line-height: 51.14px;
-        text-align: left;
-        max-width: 23%;
-        padding-left: 7%;
-        margin-bottom: 70px;
-    }
+        line-height: 52px;
 
-    .innerItem {
-        padding-top: 70px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-
-        @media screen and (max-width: 586px) {
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
-
-    }
-
-    .titleItem {
-        width: calc(100%/3);
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 20px;
-        border: 0.5px solid #333B45;
-
-        @media screen and (max-width: 586px) {
-            width: 100%;
+        @media screen and (max-width: 786px) {
+            font-size: 35px;
+            line-height: 34px;
         }
     }
 
-    .itemText {
-        padding-top: 30px;
-    }
-
-    .titleInfo {
+    &__item {
         display: flex;
         justify-content: space-between;
-        padding-top: 40px;
-        border-bottom: 1px solid #fff;
+        padding-bottom: 59px;
+        gap: 30px;
+
+        @media screen and (max-width: 786px) {
+            flex-direction: column;
+        }
     }
 
-    .titleInfoText {
-        font-family: Neue Machina;
+    &__item_article {
+        width: calc(100%/3);
+
+        @media screen and (max-width: 786px) {
+            width: 100%;
+        }
+
+    }
+
+    &__item_text {
+        padding-top: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: left;
+    }
+
+    &__link_box {
+        padding-bottom: 135px;
+
+        @media screen and (max-width: 786px) {
+            padding-bottom: 98px;
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid $colorTextStyle;
         font-size: 53px;
         font-weight: 800;
-        line-height: 51.14px;
-        text-align: left;
-        padding-bottom: 20px;
+        line-height: 51px;
+        padding-bottom: 22px;
+        padding-top: 134px;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 786px) {
+            padding-top: 96px;
+            font-size: 30px;
+            line-height: 29px;
+            padding-bottom: 9px;
+
+        }
+    }
+
+    &__img_link {
+        height: 35px;
     }
 }
 
+
 .footer {
-    background-color: black;
+    background-color: #202020;
     padding-top: 40px;
     padding-bottom: 40px;
 
@@ -246,7 +314,7 @@ p {
         .title {
             font-size: 53px;
             font-weight: 800;
-            line-height: 51.14px;
+            line-height: 52px;
             text-align: left;
             padding-bottom: 30px;
         }
@@ -323,7 +391,7 @@ p {
         .titleFooterContent {
             font-size: 22px;
             font-weight: 800;
-            line-height: 21.23px;
+            line-height: 21px;
             text-align: left;
         }
 

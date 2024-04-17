@@ -20,7 +20,7 @@
 
     <header class="header">
       <div class="container">
-        <div class="menu">
+        <div class="header__menu">
           <a href="index.html" class="menu__logo"><img src="img/logo.png" alt="logo"></a>
           <nav class="menu__nav"><img src="img/menuNav.png" alt="menu">
           </nav>
@@ -45,71 +45,76 @@
       </div>
     </div>
 
-    <nav class="content">
+    <nav class="nav">
       <div class="container">
-        <ul class="contentLink">
-          <li class="links">
-            <a href="#" class="links__link">
-              <p class="titleLinks">Монтажные шкафы</p>
-              <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-            </a>
-          </li>
-          <li class="links">
-            <a href="#" class="links__link">
-              <p class="titleLinks">Система управления кабелями</p>
-              <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-            </a>
-          </li>
-          <li class="links">
-            <a href="#" class="links__link">
-              <p class="titleLinks">Cистемы изоляции воздушных
-                коридоров</p>
-              <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-            </a>
-          </li>
-          <li class="links">
-            <a href="#" class="links__link">
-              <p class="titleLinks">ОСР стойка</p>
-              <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-            </a>
-          </li>
-          <li class="links">
-            <a href="#" class="links__link">
-              <p class="titleLinks">Блоки распределения питания</p>
-              <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-            </a>
-          </li>
-          <li class="links">
-            <a href="#" class="links__link">
-              <p class="titleLinks">Аксессуары</p>
-              <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-            </a>
-          </li>
-        </ul>
+        <div class="nav__content">
+          <a href="#" class="nav__link nav__imgBox">
+            <span class="nav__item"> Монтажные шкафы </span>
+            <img src="img/arrow.svg" class="nav__svg">
+          </a>
+
+          <a href="#" class="nav__link nav__imgSys">
+            <span class="nav__item"> Система управления кабелями </span>
+            <img src="img/arrow.svg" class="nav__svg">
+          </a>
+
+          <a href="#" class="nav__link nav__imgCond">
+            <span class="nav__item"> Cистемы изоляции воздушных коридоров </span>
+            <img src="img/arrow.svg" class="nav__svg">
+          </a>
+
+          <a href="#" class="nav__link nav__imgOcp">
+            <span class="nav__item"> ОСР стойка</span>
+            <img src="img/arrow.svg" class="nav__svg">
+          </a>
+
+          <a href="#" class="nav__link nav__imgBlock">
+            <span class="nav__item"> Блоки распределения питания</span>
+            <img src="img/arrow.svg" class="nav__svg">
+          </a>
+
+          <a href="#" class="nav__link nav__imgAcs">
+            <span class="nav__item"> Аксессуары </span>
+            <img src="img/arrow.svg" class="nav__svg">
+          </a>
+
+          <!--<a href="#" class="nav__link nav__img">Монтажные шкафы <img src="img/arrow.svg" class="nav_svg"></a>
+          <a href="#" class="nav__link nav__img">Монтажные шкафы <img src="img/arrow.svg" class="nav_svg"></a>
+          <a href="#" class="nav__link nav__img">Монтажные шкафы <img src="img/arrow.svg" class="nav_svg"></a>
+          <a href="#" class="nav__link nav__img">Монтажные шкафы <img src="img/arrow.svg" class="nav_svg"></a> -->
+        </div>
       </div>
     </nav>
 
-    <section class="info">
+    <section class="main">
       <div class="container">
-        <div class="inner">
-          <h1 class="title">Сделано в России</h1>
-          <div class="innerItem">
-            <article class="titleItem"> <img src="img/line.png" alt="line">
-              <p class="itemText">Предлагаем полностью
+        <div class="main__inner">
+          <div class="main__title">
+            <h2 class="main__title_text">cделано в России</h2>
+          </div>
+          <div class="main__item">
+
+            <article class="main__item_article">
+              <img src="img/line.png" alt="line">
+              <p class="main__item_text">Предлагаем полностью
                 проработанные решения
                 российского производства,
                 готовые к эксплуатации</p>
             </article>
-            <article class="titleItem"> <img src="img/line.png" alt="line">
-              <p class="itemText">Все производственные мощности
+
+            <article class="main__item_article">
+              <img src="img/line.png" alt="line">
+              <p class="main__item_text">Все производственные мощности
                 компании расположены на
                 территории РФ, благодаря чему
                 из себестоимости исключена
                 долгая, сложная и затратная
                 логистика</p>
             </article>
-            <article class="titleItem"> <img src="img/line.png" alt="line">
-              <p class="itemText">
+
+            <article class="main__item_article">
+              <img src="img/line.png" alt="line">
+              <p class="main__item_text">
                 За минимальный срок поставки
                 наши клиенты получают продукцию
                 высокого качества по оптимальной
@@ -119,24 +124,18 @@
                 мировых производителей
               </p>
             </article>
+
           </div>
         </div>
 
+        <div class="main__link_box">
+          <a href="#" class="main__link">О компании<img src="img/arrow.svg" alt="image" class="main__img_link"></a>
 
-        <article class="titleInfo">
-          <h1 class="titleInfoText">
-            О компании
-          </h1>
-          <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-        </article>
-        <article class="titleInfo">
-          <h1 class="titleInfoText">
-            ДИСТРИБЬЮТOР
-          </h1>
-          <img src="img/arrow.svg" alt="image" class="imgTitleLinks">
-        </article>
+          <a href="#" class="main__link">Дистрибьютор<img src="img/arrow.svg" alt="image" class="main__img_link"></a>
+        </div>
       </div>
     </section>
+
 
     <footer class="footer">
       <div class="container">
